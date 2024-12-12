@@ -1,0 +1,63 @@
+# Java/Spring Boot
+# Target directory and other build artifacts
+/target/
+/out/
+
+# Maven and Gradle specific files
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+build/
+.gradle/
+/*.war
+/*.jar
+
+# Logs
+*.log
+/logs/
+/*.log.*
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# OS Specific Files
+.DS_Store
+Thumbs.db
+
+# React
+# Node.js modules
+/node_modules/
+
+# Build outputs
+/build/
+/dist/
+/public/build/
+
+# Logs and debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Tailwind CSS
+# Tailwind's generated CSS (if used)
+/src/styles/*.css
+
+# Environment Files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Cache and VS Code Files
+/.cache/
+/.vscode/
+/*.lock
+/coverage/
