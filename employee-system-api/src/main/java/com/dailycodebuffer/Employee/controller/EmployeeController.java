@@ -1,14 +1,14 @@
 package com.dailycodebuffer.Employee.controller;
 
+import com.dailycodebuffer.Employee.model.Employee;
 import com.dailycodebuffer.Employee.services.EmployeeService;
 
-import com.dailycodebuffer.Employee.model.Employee;
+import java.util.List;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+// import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/api/v1/")
 public class EmployeeController {
@@ -24,4 +24,8 @@ public class EmployeeController {
       return EmployeeService.createEmployee(employee);
     }
 
+    @GetMapping("/employees")
+    public List<Employee> getAllEmployees() {
+      return EmployeeService.getAllEmployees();
+    }
 }
